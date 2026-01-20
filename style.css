@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  padding: 24px 116px 64px 116px;
+
+}
+
+.right-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* App Introduction */
+.container {
+  display: flex;
+  align-items: stretch;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  gap: 24px;
+  padding: 24px 116px 64px 116px;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description h1{
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.desc_subtext {
+  margin-top: 32px;
+}
+
+.description, .desc_image {
+  flex: 1;
+}
+
+.desc_image {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+/* Team Introduction */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px;
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+}
+
+.member {
+  border: 2px solid #3882F6;
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Features */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #E5E7EB;
+  padding: 48px 48px;
+  flex: 1;
+}
+
+.features-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.feats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F9FAF8;
+}
+
+.features-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.features-subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.feats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+/* Copied from W3 Schools: How TO - Slideshow */
+/* Slideshow container */
+/* Wrapper ensures dots centered under slideshow */
+.slideshow-wrapper {
+  width: min(720px, 92vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Slideshow container as a stable card */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  padding: 22px 56px;          /* room for arrows */
+  min-height: 230px;           /* locks box size */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+}
+
+/* This keeps the content height stable so box doesn't jump */
+.slide-content {
+  height: 186px;               /* (230 min-height - padding area approx) stable visual height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.slide-caption {
+  color: #111827;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.slide-subtext {
+  color: #374151;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+/* Number text */
+.numbertext {
+  color: #6b7280;
+  font-size: 12px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 14px;
+  color: #111827;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  background: rgba(255,255,255,0.9);
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.prev { left: 12px; }
+.next { right: 12px; }
+
+.prev:hover, .next:hover {
+  background: rgba(17,24,39,0.10);
+}
+
+/* Dots */
+.dots {
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #9ca3af;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.active, .dot:hover {
+  background-color: #111827;
+}
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@keyframes fade {
+  from { opacity: .25; }
+  to { opacity: 1; }
+}
+
+/* Footer */
+.footer {
+  padding: 18px 24px;
+  background: #1F2937;
+  color: #F9FAF8;
+  text-align: center;
+}
+
+/* Make padding responsive on smaller screens */
+@media (max-width: 900px) {
+  .header, .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .desc_image {
+    max-width: 420px;
+    width: 100%;
+  }
+}
