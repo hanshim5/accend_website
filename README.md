@@ -1,4 +1,6 @@
 # Business-website
 A basic website.
 
-The website will contain details about an AI-powered speech development application.
+This website introduces Accend’s main idea, planned features, and team. It is meant for demonstrations, presentations, and future development.
+
+This project is currently in the **prototype / concept stage**.
